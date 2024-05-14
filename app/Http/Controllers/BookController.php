@@ -101,6 +101,9 @@ class BookController extends Controller
             'available' => 'required|integer|between:1,1000'
         ]);
         $book->fill($validated);
+        if($book->available > $book->amount){
+            $book->available = $book->amount;
+        }
         $book->save();
         return redirect(route('books.index'));
     }

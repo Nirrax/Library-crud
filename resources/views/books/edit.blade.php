@@ -87,10 +87,11 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Update') }}
                                 </button>
-                                <a href="{{route('books.index')}}"></a>
-                                <button class="btn btn-danger">
-                                    {{ __('Cancel') }}
-                                </button>
+                                <a href="{{route('books.index')}}">
+                                    <button type="button" class="btn btn-danger">
+                                        {{ __('Cancel') }}
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </form>

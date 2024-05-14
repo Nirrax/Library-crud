@@ -9,7 +9,7 @@
     <div class="col-6">
       @can('isAdmin')
       <a class="float-right" href="{{route('books.create')}}">
-        <button type="button" class="btn btn-secondary">Add book</button>
+        <button type="button" class="btn btn-secondary">{{ __('Add book') }}</button>
       </a>
       @endcan
     </div>
@@ -34,15 +34,15 @@
           <td>{{$book->title}}</td>
           <td>{{$book->author}}</td>
           <td>{{$book->available }}/{{$book->amount}}</td>
-          @can('isAdmin')
           <td>
-            <a href="{{route('books.edit', $book->id)}}">
-              <button class="btn btn-success btn-sm">X</button>
-            </a>
-            <button class="btn btn-danger btn-sm delete" data-id="{{$book->id}}">X</button>
             <a href="{{route('books.show', $book->id)}}">
-              <button class="btn btn-primary btn-sm">X</button>
+              <button class="btn btn-primary btn-sm">{{ __('S') }}</button>
             </a>
+            @can('isAdmin')
+            <a href="{{route('books.edit', $book->id)}}">
+              <button class="btn btn-success btn-sm">{{ __('E') }}</button>
+            </a>
+            <button class="btn btn-danger btn-sm delete" data-id="{{$book->id}}">{{ __('D') }}</button>
           </td>
           @endcan
         </tr>

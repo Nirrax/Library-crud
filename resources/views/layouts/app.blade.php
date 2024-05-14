@@ -25,7 +25,7 @@
             <div class="container">
                 <a class="navbar-brand navbar-brand-lg" href="{{ url('/') }}">
                     <!--{{ config('app.name', 'Laravel') }}-->
-                    Library
+                    {{ __('Library') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -57,9 +57,9 @@
 
                                 <div class="dropdown-menu dropdown-menu-right dropdown-menu-dark" aria-labelledby="navbarDropdown">
                                     @can('isAdmin')
-                                        <a class="dropdown-item dropdown-item-dark" href="/adminPanel">Admin panel</a>
+                                        <a class="dropdown-item dropdown-item-dark" href="/adminPanel">{{ __('Admin panel') }}</a>
                                     @endcan
-                                    <a class="dropdown-item dropdown-item-dark" href="/books">Books list</a>
+                                    <a class="dropdown-item dropdown-item-dark" href="/books">{{ __('Books list') }}</a>
                                     <a class="dropdown-item dropdown-item-dark" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

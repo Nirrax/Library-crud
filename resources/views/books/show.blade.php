@@ -50,6 +50,16 @@
                                 <input id="available" type="number" class="form-control" name="available" value="{{ $book->available }}" disabled>
                             </div>
                         </div>
+
+                        <div class="form-group row mb-0">
+                            <div class="col-md-12 offset-md-5">
+                                <a href="{{route('books.index')}}">
+                                    <button class="btn btn-primary">
+                                        {{ __('Go back') }}
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>

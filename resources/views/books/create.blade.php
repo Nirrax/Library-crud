@@ -90,6 +90,9 @@
                                 <button type="reset" class="btn btn-danger">
                                     {{ __('Clear') }}
                                 </button>
+                                <a href="{{route('books.index')}}">
+                                    <button type="button" class="btn btn-secondary">{{ __('Go back') }}</button>
+                                </a>
                             </div>
                         </div>
                     </form>
