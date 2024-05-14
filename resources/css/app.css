@@ -1,0 +1,32 @@
+.bg-image-full{
+    padding-bottom: 6rem !important;
+    padding-top: 6rem !important;
+}
+
+.bg-dark{
+
+}
+
+.navbar{
+    padding: 1.5rem 1.5rem;
+}
+
+.no-pad-top{
+    padding-top: 0rem !important;
+}
+
+.no-pad-bot{
+    padding-bottom: 0rem !important;
+}
+
+.pad-top{
+    padding-top: 1.5rem !important;
+}
+
+a{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-grey{
+    background: rgb(220,220,220);
+}
